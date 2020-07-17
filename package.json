@@ -1,0 +1,25 @@
+{
+  "name": "array-ops",
+  "version": "1.0.0",
+  "description": "Array manipulator library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay-34/array-ops.git"
+  },
+  "keywords": [
+    "array",
+    "array-manipulation",
+    "sort",
+    "search",
+    "filter",
+    "map",
+    "reduce"
+  ],
+  "author": "Akshay R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshay-34/array-ops/issues"
+  },
+  "homepage": "https://github.com/akshay-34/array-ops#readme"
+}
