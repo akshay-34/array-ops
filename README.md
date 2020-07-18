@@ -6,47 +6,59 @@ A comprehensive library for javascript array operations and manipulation.
 	npm install array-ops
 
 ## Initilization
-	var array_ops = require('array-ops')
-	var ao = new array_ops()
+```js
+var arrayOps = require('array-ops')
+var array = new array_ops()
+```
 ## Example
-
-    ao.isArray([1,2,3])  // true
-	
+```js	
+array.isArray([1,2,3])  // true
+```
 ## API Reference
 
- 1. [validation](#validation)
+ 1. [Validation](#validation)
 
-### **validation**
-
-ao.**isArray(array)** 
+## Validation
+### `array.isArray(array)`
 *Returns true if the passed value is an array.*
-
-	    ao.isArray([1,2,3])              // true
-	    ao.isArray(1)                    // false
+```js
+array.isArray([1,2,3])              // true
+array.isArray(1)                    // false
+```
 ---  
-ao.**isNumericArray(array)** 
+### `array.isNumericArray(array)`
 *Returns true if all the elements of the array are numbers (Intergers or Decimal).*
-
-	    ao.isNumericArray([1,2,3])       // true
-	    ao.isNumericArray([1,2,4.6])     // true
-	    ao.isNumericArray([1,'r',8)      // false
+```js
+array.isNumericArray([1,2,3])       // true
+array.isNumericArray([1,2,4.6])     // true
+array.isNumericArray([1,'r',8)      // false
+```
 ---
-ao.**isIntegerArray(array)** 
+### `array.isIntegerArray(array)`
 *Returns true if all the elements of the array are integers.*
-
-	    ao.isIntegerArray([1,2,3])       // true
-	    ao.isIntegerArray([1,2,4.6])     // false
+```js
+array.isIntegerArray([1,2,3])       // true
+array.isIntegerArray([1,2,4.6])     // false
+```
 ---
-ao.**isDecimalArray(array)** 
+### `array.isDecimalArray(array)`
 *Returns true if all the elements of the array are decimal.*
-
-	    ao.isDecimalArray([24.3,82.6])   // true
-	    ao.isDecimalArray([1,2,3])       // false
+```js
+array.isDecimalArray([24.3,82.6])   // true
+array.isDecimalArray([1,2,3])       // false
+```
 ---
-ao.**isStringArray(array)** 
+### `array.isStringArray(array)`
 *Returns true if all the elements of the array are strings.*
-
-	    ao.isStringArray(['foo','bar'])  // true
-	    ao.isStringArray(['1','2','3'])  // true
-	    ao.isStringArray([1,34])         // false
+```js
+array.isStringArray(['foo','bar'])  // true
+array.isStringArray(['1','2','3'])  // true
+array.isStringArray([1,34])         // false
+```
 ---
+### `array.isEmptyArray(array)`
+*Returns true if the array is empty.*
+```js
+array.isStringArray([]) // true
+array.isStringArray([1]) // false
+```

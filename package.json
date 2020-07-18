@@ -9,7 +9,8 @@
   },
   "keywords": [
     "array",
-    "array-manipulation",
+    "array manipulation",
+    "array operation",
     "sort",
     "search",
     "filter",
@@ -21,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/akshay-34/array-ops/issues"
   },
-  "homepage": "https://github.com/akshay-34/array-ops#readme"
+  "homepage": "https://github.com/akshay-34"
 }

@@ -51,6 +51,14 @@ module.exports = class{
         }  
     }
 
+    isEmptyArray(array){
+        if((this.isArray(array)) && (array.length == 0)){
+            return true
+        }
+        else{
+            return false
+        }
+    }
    
 }
 
