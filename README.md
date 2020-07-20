@@ -14,11 +14,8 @@ var array = new array_ops()
 ```js	
 array.isArray([1,2,3])  // true
 ```
-## API Reference
+## Methods
 
- 1. [Validation](#validation)
-
-## Validation
 ### `array.isArray(array)`
 *Returns true if the passed value is an array.*
 ```js
@@ -42,7 +39,7 @@ array.isIntegerArray([1,2,4.6])     // false
 ```
 ---
 ### `array.isDecimalArray(array)`
-*Returns true if all the elements of the array are decimal.*
+*Returns true if all the elements of the array are decimals.*
 ```js
 array.isDecimalArray([24.3,82.6])   // true
 array.isDecimalArray([1,2,3])       // false
@@ -59,6 +56,6 @@ array.isStringArray([1,34])         // false
 ### `array.isEmptyArray(array)`
 *Returns true if the array is empty.*
 ```js
-array.isStringArray([]) // true
-array.isStringArray([1]) // false
+array.isStringArray([]) 			// true
+array.isStringArray([1]) 			// false
 ```

@@ -4,6 +4,17 @@ module.exports = class{
         this.value;
     }
 
+    isValidNonEmptyArray(array){
+        if((Array.isArray(array)) && (array.length>0))
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+
     // Array Validation //
 
     isArray(array){
@@ -59,6 +70,58 @@ module.exports = class{
             return false
         }
     }
+
+
+    // array aggregation
+
+    sum(array){
+        let flag = 0;
+        if(this.isValidNonEmptyArray(array))
+        {
+            let result = array.reduce((total,element) => {
+                if(typeof(element)=='number'){
+                    flag = true
+                    return total + element
+                }
+                else{
+                    return total
+                }
+            },0)
+            if(flag)
+            {
+                return parseFloat(result.toFixed(4))
+            } 
+        }
+    }
+
+   
+
+    product(array){
+        let flag = false;
+        if(this.isValidNonEmptyArray(array))
+        {   
+            let result = array.reduce((total,element) => {
+                if(typeof(element)=='number'){
+                    flag = true;
+                    return total * element
+                }
+                else{
+                    return total
+                }
+            },1)
+            
+            if(flag)
+            {
+                return parseFloat(result.toFixed(4))
+            } 
+        }
+    }
+
+    count(array){
+        return array.length;
+    }
+
+    
    
 }
 
